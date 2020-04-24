@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+.jumboTron {
+	background-color: #BDDDDD;
+	padding: 0;
+	margin: 0;
+}
+
+.button {
+	background-color: #509a9a;
+}
+
+th {
+	background-color: #f9f1ca;
+}
+
+tr {
+	background-color: #fcf8e4;
+}
+
+div.seperator {
+	background-colo: #000000;
+}
+
+hr {
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10px;
+	background-color: #444;
+	opcaity: 0.5;
+}
+
+.center{
+	text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+.column{
+  padding-right: 20px;
+  padding-left: 10px;
+}
+table{
+	class: table table-striped;
+}
+img{
+	margin: 0;
+	width: 200px;
+	height: 100px;
+	padding-left:5px;
+}
+td{
+	text-allign: center;
+}
