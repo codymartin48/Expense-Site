@@ -21,7 +21,7 @@
 	</properties>
 
 	<dependencies>
-		
+
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -88,7 +88,7 @@
 			<artifactId>bootstrap</artifactId>
 			<version>4.3.1</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
@@ -111,6 +111,28 @@
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
+				
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.0</version>
+					<executions>
+						<execution>
+							<id>tomcat-run</id>
+							<goals>
+								<goal>exec-war-only</goal>
+							</goals>
+							<phase>package</phase>
+							<configuration>
+								<path>/</path>
+								<enableNaming>false</enableNaming>
+								<finalName>webapp.jar</finalName>
+								<charset>utf-8</charset>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
